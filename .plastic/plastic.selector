@@ -1,0 +1,4 @@
+repository "MMORPG_Horror@lorodepk@cloud"
+  path "/"
+    br "/main"
+    co "/main"
