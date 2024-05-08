@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GDev\\Git\\LapkaHorror\\Ritual\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5E77F2-F503-2E31-3BC6-7F96C02323F5}|Assembly-CSharp.csproj|c:\\gdev\\git\\lapkahorror\\ritual\\assets\\scripts\\animatoinandmovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5E77F2-F503-2E31-3BC6-7F96C02323F5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animatoinandmovementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D5E77F2-F503-2E31-3BC6-7F96C02323F5}|Assembly-CSharp.csproj|c:\\gdev\\git\\lapkahorror\\ritual\\assets\\animations\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D5E77F2-F503-2E31-3BC6-7F96C02323F5}|Assembly-CSharp.csproj|solutionrelative:assets\\animations\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimatoinAndMovementController.cs",
+              "DocumentMoniker": "C:\\GDev\\Git\\LapkaHorror\\Ritual\\Assets\\Scripts\\AnimatoinAndMovementController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AnimatoinAndMovementController.cs",
+              "ToolTip": "C:\\GDev\\Git\\LapkaHorror\\Ritual\\Assets\\Scripts\\AnimatoinAndMovementController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AnimatoinAndMovementController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:03:43.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "C:\\GDev\\Git\\LapkaHorror\\Ritual\\Assets\\Animations\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Animations\\PlayerInput.cs",
+              "ToolTip": "C:\\GDev\\Git\\LapkaHorror\\Ritual\\Assets\\Animations\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\Animations\\PlayerInput.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:00:46.157Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
