@@ -11,13 +11,19 @@ using UnityEngine;
  */
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Transform _playerTransform;
+    [SerializeField] private Transform _cameraTransform;
+
+    [SerializeField] private float _playerSpeed;
+    [SerializeField] private float _mouseSensitivity;
+    
     //Отвечает за передвижение и поворот пользователя
     private PlayerMovementService _playerMovementService;
 
     //Как только игровой объект на который навешен этот скрипт становится активен, исполняется этот метод
     private void OnEnable()
     {
-        _playerMovementService = new PlayerMovementService();
+        _playerMovementService = new PlayerMovementService(_playerTransform, _cameraTransform);
     }
 
     /*
@@ -27,6 +33,7 @@ public class PlayerController : MonoBehaviour
      */
     private void FixedUpdate()
     {
-        throw new NotImplementedException();
+        _playerMovementService.Rotate(_mouseSensitivity);
+        _playerMovementService.Move(_playerSpeed);
     }
 }
