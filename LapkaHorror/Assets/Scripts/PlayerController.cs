@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Services;
 using UnityEngine;
 
@@ -20,6 +17,11 @@ public class PlayerController : MonoBehaviour
     //Отвечает за передвижение и поворот пользователя
     private PlayerMovementService _playerMovementService;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     //Как только игровой объект на который навешен этот скрипт становится активен, исполняется этот метод
     private void OnEnable()
     {

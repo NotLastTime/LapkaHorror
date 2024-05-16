@@ -1,0 +1,61 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide"
+#  (a free plugin for Cinema 4D PC & Mac, R7.3 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl default_Mat
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl door
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd doorSurface_Color.jpg
+
+newmtl door_elect
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd door_electSurface_Color.jpg
+map_Bump door_electSurface_Color.jpg
+
+newmtl placher
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd placherSurface_Color.jpg
+map_Bump placherSurface_Color.jpg
+
+newmtl plafond
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd plafondSurface_Color.jpg
+map_Bump plafondSurface_Color.jpg
+
+newmtl couloir
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd couloirSurface_Color.jpg
+map_Bump couloirSurface_Color.jpg
+
+newmtl Stair
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd StairSurface_Color.jpg
+map_Bump StairSurface_Color.jpg
+
+newmtl boite_electrique
+d 1.000000
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd boite_electriqueSurface_Color.jpg
