@@ -17,6 +17,11 @@ namespace Services
         {
             Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
             _playerTransform.Translate(direction * playerSpeed * Time.deltaTime);
+
+            Quaternion rotation = _playerTransform.rotation;
+            rotation.x = 0f;
+            rotation.z = 0f;
+            _playerTransform.rotation = rotation;
         }
 
         public void Rotate(float mouseSensitivity)

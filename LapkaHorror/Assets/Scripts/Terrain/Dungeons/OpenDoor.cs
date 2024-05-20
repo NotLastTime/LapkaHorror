@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float _distanse = 10f;
+    RaycastHit _hit;
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (Physics.Raycast(transform.position, transform.forward, out _hit, _distanse))
+            {
+                if(_hit.transform.tag == "doorsCapsul")
+                {
+                    Animator _anim = _hit.transform.GetComponent<Animator>();
+                    _anim.SetBool("Open", !_anim.GetBool("Open"));
+                }
+            }
+        }
     }
 }

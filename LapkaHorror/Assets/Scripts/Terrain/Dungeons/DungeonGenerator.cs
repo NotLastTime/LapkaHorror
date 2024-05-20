@@ -26,6 +26,7 @@ public class DungeonGenerator : MonoBehaviour
         MazeGenerator();
     }
 
+    // Задаем случайные параметры размеров лабиринта
     void RandomizeSize()
     {
         _sizeMin.x = Random.Range(0, 5);
@@ -145,7 +146,7 @@ public class DungeonGenerator : MonoBehaviour
         List<int> _neighbors = new List<int>();
 
         // Проверяем соседей 0 - сверху 1 - снизу 2 - справа 3 - слева
-        if (_cell - _size.x >= 0 && !_board[Mathf.FloorToInt(_cell - _size.x)]._visited)
+        if (_cell - _size.x >= 0 && !_board[Mathf.FloorToInt(_cell - _size.x)]._visited) // 0
         {
             _neighbors.Add(Mathf.FloorToInt(_cell - _size.x));
         }
