@@ -300,6 +300,6 @@ MonoBehaviour:
   _respawnPoint: {fileID: 0}
   _groundMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   _speed: 10
   _jumpHeight: 2
