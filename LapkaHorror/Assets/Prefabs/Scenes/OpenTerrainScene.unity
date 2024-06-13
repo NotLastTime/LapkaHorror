@@ -1154,6 +1154,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7292647389010561210, guid: 2f5659a202c844340ac27f783393e112, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.997
+      objectReference: {fileID: 0}
     - target: {fileID: 7564784276068294753, guid: 2f5659a202c844340ac27f783393e112, type: 3}
       propertyPath: m_Name
       value: FPPlayer
