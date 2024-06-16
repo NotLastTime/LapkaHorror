@@ -17,6 +17,7 @@ public class KeyBindingManager : MonoBehaviour
 
     private GameObject _currentMovementKey;
     private GameObject _currentAbilityKey;
+    //private GameObject _currentInteractionKey;
 
     private Color32 _normalColor = new Color32(255, 196, 196, 255);
     private Color32 _selectedColor = new Color32(227, 31, 31, 255);
@@ -24,6 +25,7 @@ public class KeyBindingManager : MonoBehaviour
 
     public Text forward, back, left, right, jump;
     public Text ability1, ability2, ability3, ability4, ability5, ability6, ability7, ability8, ability9;
+    //public Text spellBook, bestiary, inventary;
 
     private void Awake()
     {
@@ -59,6 +61,7 @@ public class KeyBindingManager : MonoBehaviour
                 _currentMovementKey = null;
             }
         }
+
         if (_currentAbilityKey != null)
         {
             Event e = Event.current;
@@ -71,6 +74,19 @@ public class KeyBindingManager : MonoBehaviour
                 _currentAbilityKey = null;
             }
         }
+
+        //if (_currentInteractionKey != null)
+        //{
+        //    Event e = Event.current;
+
+        //    if (e.isKey)
+        //    {
+        //        _interactionKeys[_currentInteractionKey.name] = e.keyCode;
+        //        _currentInteractionKey.transform.GetChild(0).GetComponent<Text>().text = e.keyCode.ToString();
+        //        _currentInteractionKey.GetComponent<Image>().color = _normalColor;
+        //        _currentInteractionKey = null;
+        //    }
+        //}
     }
 
     public void ChangeKey(GameObject clicked)
@@ -90,6 +106,14 @@ public class KeyBindingManager : MonoBehaviour
 
         _currentAbilityKey = clicked;
         _currentAbilityKey.GetComponent<Image>().color = _selectedColor;
+
+        //if (_currentInteractionKey != null)
+        //{
+        //    _currentInteractionKey.GetComponent<Image>().color = _normalColor;
+        //}
+
+        //_currentInteractionKey = clicked;
+        //_currentInteractionKey.GetComponent<Image>().color = _selectedColor;
     }
 
     public void InitializeKeysUI()
@@ -112,7 +136,10 @@ public class KeyBindingManager : MonoBehaviour
         ability8.text = _abilityKeys["AbilityActionBtn8"].ToString();
         ability9.text = _abilityKeys["AbilityActionBtn9"].ToString();
 
-        // Interation
+        // Interaction
+        //spellBook.text = _interactionKeys["SpellBookBtn"].ToString();
+        //bestiary.text = _interactionKeys["BestiaryBtn"].ToString();
+        //inventary.text = _interactionKeys["inventory"].ToString();
     }
 
     public void SaveKeys()
@@ -149,6 +176,12 @@ public class KeyBindingManager : MonoBehaviour
         _abilityKeys.Add("AbilityActionBtn7", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("AbilityActionBtn7", "Alpha7").Replace("Alpha", "")));
         _abilityKeys.Add("AbilityActionBtn8", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("AbilityActionBtn8", "Alpha8").Replace("Alpha", "")));
         _abilityKeys.Add("AbilityActionBtn9", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("AbilityActionBtn9", "Alpha9").Replace("Alpha", "")));
+
+        // Interactions
+        //_interactionKeys.Add("SpellBookBtn", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("SpellBookBtn", "P")));
+        //_interactionKeys.Add("BestiaryBtn", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("BestiaryBtn", "O")));
+        //_interactionKeys.Add("InventoryBtn", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("InventaryBtn", "I")));
+
     }
 
     public Dictionary<string, KeyCode> GetMovementKeyBindings()
@@ -160,6 +193,11 @@ public class KeyBindingManager : MonoBehaviour
     {
         return _abilityKeys;
     }
+
+    //public Dictionary<string, KeyCode> GetInteractionKeyBindings()
+    //{
+    //    return _interactionKeys;
+    //}
 
     private void SetupButtonsEvents()
     {
